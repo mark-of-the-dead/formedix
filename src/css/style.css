@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Gugi');
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; } /* Reset margins and padding */
+
+a:link, a:visited{text-decoration:none;outline:none;} /* Reset link styles */
+
+html {overflow: -moz-scrollbars-vertical;} /* Mozilla scrollbar fix */
+
+#skipto{position:absolute;left:-9999px;top:-9999px;} /* Hides the skip to link - useful for screen readers */
+
+.group:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;} /* Automatically clears after any element with this class */
+
+body, html{height:100%; font-family: 'Open Sans', sans-serif;}
+body{font:75%/1.5 'Open Sans', sans-serif; background:#dfdbd0; color: #444;}
+* {box-sizing: border-box;}
+
+.search-form {
+    width: 300px;
+    height: 150px;
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.search-form h2{
+    display:block;
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.search-form input{
+    display:block;
+    width:100%;
+    height:40px;
+}
+
+.search-form button{
+    display:block;
+    width:100%;
+    height:30px;
+}
+
+.app-container {
+    padding-top: 55px;
+}
+
+header{
+    background: #fff;
+    padding: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px #444; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 4px 0px #444; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+    background-color: #ffffff;
+    background-image: -webkit-linear-gradient(top, #ffffff, #e0e0e0); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:         linear-gradient(to bottom, #ffffff 95%, #e0e0e0 100%); /* Chrome 26, Firefox 16+, IE 10+, Opera */
+    position: fixed;
+    width:100%;
+    z-index: 2;
+    margin-top: -55px;
+}
+
+h1 {
+    background: url(https://www.formedix.com/hs-fs/hubfs/images/Logo/Formedix%20logo%20MAIN_RGB%202-01.png?width=1380&name=Formedix%20logo%20MAIN_RGB%202-01.png) no-repeat bottom center;
+    background-size: 120px 33px;
+    width:120px;
+    height:33px;
+    margin: 5px;
+    margin-bottom: 0;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -97867px;
+}
+
+header h2 {
+    font-family: 'Gugi', cursive;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+
+header button {
+    display: inline-block;
+    vertical-align: top;
+    height: 43px;
+    width: 70px;
+    float:right;
+}
+
+.images {
+    clear:both;
+}
+
+.flickr-image {
+    box-sizing: border-box;
+    border: 20px solid #fff;
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin-left:2.49%;
+    margin-top:2.49%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.lightboxImage {
+    max-width:100%;
+}
+
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.8);
+    text-align:center;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #050505;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    height:100%;
+  }
+
+  .mySlides{
+      height: 100%;
+  }
+
+  .mySlides img{
+      max-height:100%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ 
+  
+  /* Caption text */
+  .caption-container {
+    text-align: left;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2px 16px;
+    color: white;
+    height: 200px;
+    margin-top:-200px;
+    position:relative;
+    z-index: 3;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+.photo-tags {
+    list-style:none;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.photo-tags li{
+    float:left;
+    padding: 3px;
+    border: 1px solid #666;
+    margin: 0 2px;
+}
+
+  .clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
