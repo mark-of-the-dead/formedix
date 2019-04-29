@@ -13,7 +13,7 @@ Simple infinite scrolling image search demo using Flickr APIs.
 
   
 
-There's not a lot need to run this demo. Simply download and follow the setup instructions below.
+There's not a lot needed to run this demo. Simply download and follow the setup instructions below.
 
   
 
@@ -91,4 +91,4 @@ Given a bit more time there's a lot of room for improvement.
 
   
 
-* **Mark Wallace** - [HardCandyDesign](https://www.hardcandydesign.co.uk)
+* **Mark Wallace** - [HardCandyDesign](http://www.hardcandydesign.co.uk)
